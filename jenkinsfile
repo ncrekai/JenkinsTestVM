@@ -7,7 +7,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo "Running BUILD #${env.BUILD_ID} on URL: ${env.JENKINS_URL}"
-                echo "Current time is 11:11 PM"
+                echo "Current time is 11:14 PM"
             }
         }
     }
