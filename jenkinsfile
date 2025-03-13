@@ -1,13 +1,13 @@
 pipeline {
     agent any
     options {
-        // Timeout counter starts AFTER agent is allocated
         timeout(time: 90, unit: 'SECONDS')
     }
     stages {
         stage('Example') {
             steps {
-                echo 'Hello World'
+                echo "Running BUILD #${env.BUILD_ID} on URL: ${env.JENKINS_URL}"
+                echo "Current time is 11:08 PM"
             }
         }
     }
